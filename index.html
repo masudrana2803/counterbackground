@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Animation & Counters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <div class="content-wrapper">
+        <h1>Interactive Counters on the Ocean</h1>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <label for="targetValue1">Set Target Value:</label>
+                <input type="number" id="targetValue1" value="10">
+                <button onclick="startCounter(1)">Start Counter</button>
+                <div class="counter-display" id="counterDisplay1">0</div>
+            </div>
+
+            <div class="grid-item">
+                <label for="targetValue2">Set Target Value:</label>
+                <input type="number" id="targetValue2" value="25">
+                <button onclick="startCounter(2)">Start Counter</button>
+                <div class="counter-display" id="counterDisplay2">0</div>
+            </div>
+
+            <div class="grid-item">
+                <label for="targetValue3">Set Target Value:</label>
+                <input type="number" id="targetValue3" value="50">
+                <button onclick="startCounter(3)">Start Counter</button>
+                <div class="counter-display" id="counterDisplay3">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
